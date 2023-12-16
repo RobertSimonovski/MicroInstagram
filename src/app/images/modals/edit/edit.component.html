@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Edit image</h2>
+<mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput  [formControl]="title" required>
+        <mat-error>{{getErrorMessageTitle()}}</mat-error>
+    </mat-form-field>
+
+    <br>
+    <mat-form-field>
+        <mat-label>URL</mat-label>
+        <input matInput  [formControl]="url" required>
+        <mat-error>{{getErrorMessageUrl()}}</mat-error>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button color="primary" (click)="save()">
+        <mat-icon>save</mat-icon> Save
+    </button>
+    <button mat-button color="primary" (click)="dismiss()">
+        <mat-icon>cancel</mat-icon> Cancel
+    </button>
+</mat-dialog-actions>

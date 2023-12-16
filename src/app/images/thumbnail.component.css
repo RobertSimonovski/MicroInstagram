@@ -1,0 +1,14 @@
+.brightness {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+
+}
+.image-title {
+    position: absolute;
+    top: 2pt;
+    left: 2pt;
+    z-index: 10;
+    user-select: none;
+    pointer-events: none;
+}

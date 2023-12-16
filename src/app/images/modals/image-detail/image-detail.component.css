@@ -1,0 +1,47 @@
+
+
+@media all and (min-width: 800px){
+    :img {
+      width: 400px; 
+      height: 400px;
+    }
+
+}
+.id-image{
+  max-width: 90vw;
+  max-height: 90vw;
+}
+.id-title{
+  position: absolute;
+  bottom: 10pt;
+  z-index: 10;
+  user-select: none;
+  color: white;
+  margin: 2px;
+  padding: 2px;
+  background-color: #0000004d;
+}
+.id-container {
+  position: relative;
+}
+.id-nav{
+  position: absolute;
+  top: 5pt;
+  left: 5pt;
+  z-index: 10;
+  user-select: none;
+  justify-content: center;
+  margin: auto;
+  width: 97%;
+  background-color: transparent;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.id-button{
+  color: white;
+  background-color: #0000004d;
+  margin-left: 2px;
+}

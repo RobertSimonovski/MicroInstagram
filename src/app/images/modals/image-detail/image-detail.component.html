@@ -1,0 +1,21 @@
+<div class="id-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <h5 class="id-title" *ngIf="hovered">{{image?.title}}</h5>
+
+    <img [src]="image?.url" class="id-image">
+
+    <mat-toolbar class="id-nav" *ngIf="hovered">
+        <button mat-icon-button class="id-button" (click)="onBack()">
+            <mat-icon>close</mat-icon>
+        </button>
+
+        <span class="spacer"></span>
+
+        <button mat-icon-button class="id-button" (click)="onEdit()">
+            <mat-icon>edit</mat-icon>
+        </button>
+
+        <button mat-icon-button class="id-button" (click)="onDelete()">
+            <mat-icon>delete_forever</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>

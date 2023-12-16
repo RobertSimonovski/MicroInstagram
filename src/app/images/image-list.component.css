@@ -1,0 +1,40 @@
+table, tr {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.top_bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:999;
+    background-color: aquamarine;
+    background-image: linear-gradient(to right, #52B4CE, #9FDFBF);
+}
+
+.main {
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+@media all and (max-width: 800px){
+    .flex-container{
+        justify-content: flex-start;
+    }
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.flex-item{
+    text-align: center;
+    margin-top: 5px;
+}

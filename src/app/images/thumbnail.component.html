@@ -1,0 +1,7 @@
+<div class="brightness" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" (click)="onClick()" [ngClass]="{'mat-elevation-z8':highlighted}">
+    <img [src]="image.thumbnailUrl" [alt]="image.title" style="width: 150px;" [style.opacity]="opacity">
+    <div class="image-title" *ngIf="highlighted">
+        <p>{{image.title}}</p>
+    </div>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="main" style="text-align: center;"></div>
+
+<div class="flex-container" appScrollNearEnd (nearEnd)="onNearEndScroll()">
+    <div *ngFor="let i of getThumbnails(); trackBy: trackByImg" class="flex-item">
+        <mi-image [image]="i"></mi-image>
+    </div>
+</div>
